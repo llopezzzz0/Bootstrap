@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold m-0 bg-secondary" href="#">User Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="container mt-5 text-center pt-5">
+        <h2 class="text-center text-primary">Register User</h2>
+        <form class= "registrationForm border p-4 shadow-sm bg-light">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+               <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control is-invalid" id="password" placeholder="Enter your password" required>
+            <div class="invalid-feedback">
+                Please enter a valid password.
+            </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control is-invalid" id="email" placeholder="Enter your email" required>
+                <div class="invalid-feedback">
+                Please enter a valid email address.
+                </div>
+            </div>
+            <div class="container mt-5 text-center">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-3">
+                    <label for="form-check" class="form-check-label">I agree to the terms and conditions</label>
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <div class="invalid-feedback">
+                    </div>   
+                    </div>
+                    <div class="col-12 col-md-6">
+                     <button type="submit" class="btn btn-lg btn-success">Register</button>   
+                    </div>
+                </div>
+            </div> 
+        </form>
+        <div class="table-responsive text-center mt-5">
+           <h2 class="text-center text-primary mt-5">User List Data</h2>
+        <table class="table table-striped table-hover border">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Emely</td>
+                    <td>Lopez</td>
+                    <td>emelylopez@gmail.com</td>
+                    <td>********</td>
+                    </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>johndoe@hotmail.com</td>
+                    <td>*******</td>
+                    </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Johnson</td>
+                    <td>maryjohnson@icloud.com</td>
+                    <td>******</td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <h3 class="text-center text-primary mt-5">Images</h3>
+        <div class="col-12 col-md-6 container mt-5">
+        <div class="row">
+            <div class="text-center">
+            <img src="c:\Users\llope\OneDrive\assets\valentina-ivanova-4jLFbQn8ZLc-unsplash.jpg" class="img-fluid container mt-4" alt="Two eggs with faces drawn on them"> 
+            </div>
+        </div>
+        </div>    
+            <div class="row">
+            <div class="text-center">
+            <img src="c:\Users\llope\OneDrive\assets\paige-cody-gB-6O9q9uxA-unsplash.jpg" class="rounded-circle img-fluid mt-4" alt="Three eggs with faces drawn on them">    
+            </div>    
+            </div>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button type="button" class="btn btn-primary mt-3">Click Me</button>
+                <button type="button" class="btn btn-secondary d-none d-md-block mt-3">Click Me</button>      
+            </div>     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="text-center mt-5">
+    <p>&copy; 2023 User Management. All rights reserved.</p>
+</footer>
+</body>
+</html>
